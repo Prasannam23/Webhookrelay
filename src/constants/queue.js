@@ -1,8 +1,8 @@
 export const QUEUE_NAMES = Object.freeze({
-    DELIVERY = 'delivery-queue',
+    DELIVERY : 'delivery-queue',
 })
 
-export const QUEUE_JOB_OPTIONS = Object.freeze({
+export const DELIVERY_JOB_OPTIONS = Object.freeze({
     attempts: 8,
     backoff:{
         type : 'exponential',

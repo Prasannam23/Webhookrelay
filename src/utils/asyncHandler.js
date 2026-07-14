@@ -1,3 +1,3 @@
 export const asyncHandler = (fn) => (req,res,next) =>{
-    promise.resolve(fn(req,res,nexxt)).catch(next)
+    Promise.resolve(fn(req,res,next)).catch(next)
 }
