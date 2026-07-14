@@ -3,7 +3,7 @@ import { RedisStore } from 'rate-limit-redis'
 import Redis from 'ioredis'
 import { env } from "../../config/env.js";
 
-const redisClient = new Redis(env.REDIS_DATABASE_URL || process.env.REDIS_DATABASE_URL);
+const redisClient = new Redis(env.REDIS_URL || process.env.REDIS_URL);
 
 
 export function buildLimiter({windowMs, max, prefix}){
