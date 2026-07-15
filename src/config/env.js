@@ -23,5 +23,5 @@ if (!parsed.success) {
 }
 
 export const env = parsed.data;
-
 console.log('🔍 REDIS_URL being used:', env.REDIS_URL);
+
