@@ -15,7 +15,7 @@ io.on('connection',(socket) => {
     logger.debug({ socketId: socket.id},'Socket connected')
 
     socket.on('subscribe:subscriber',(subscriberId)=>{
-        socket.join(`subscriber: ${subscriberId}`)
+        socket.join(`subscriber:${subscriberId}`)
     })
 
     socket.on('disconnect', () => {
